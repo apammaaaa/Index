@@ -36,12 +36,32 @@ h2,p,span{
     background-color: #CC9999;
     color: rgb(44, 44, 44);
     font-weight: 300;
-    height: 500px;
+    height: 300px;
 }
 .download a{
-    color: rgb(44, 44, 44);
-    transition: color .4s ease;  
+    color: rgb(100, 100, 100); 
 }
-.download a:hover{
-    color: white;
+.download h2{
+    font-weight: 100;
+    background-color: rgb(196, 196, 196);
+    color: rgb(143, 112, 112);
+    border-radius: 5px;
+    font-size: 2.0em;
+    margin: 0 auto;
+    top: 10px;
+}
+figure{
+    max-width: 200px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(100, 100, 100);
+    box-shadow: 0 0 10px black;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 2px 15px;
+    transition: all .4s ease; 
+}
+figure:hover{
+    color: black;
+    box-shadow: 0 0 10px white;
 }
