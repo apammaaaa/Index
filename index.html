@@ -43,6 +43,7 @@
                     var $dn = $("#downloadNumber")
                     $(".file").click(function(){
                         var num = parseInt($dn.text(), 10) + 1;
+                        console.log(num);
                         var draft_type = '2';
                         var form = $('<form></form>');
                         form.attr('action', '');
@@ -81,11 +82,8 @@
                 xmlhttp.open("GET", "test.xml", false);
                 xmlhttp.send();
                 var xmlDoc = xmlhttp.responseXML;
-                console.log(xmlDoc);
                 $(function(){
                     var num = xmlDoc.getElementsByTagName("number")[0].childNodes[0].nodeValue;
-                    console.log(num);
-                    console.log(typeof(num));
                     $("#downloadNumber").load("test.xml")
                 })
             </script>
