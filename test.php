@@ -1,5 +1,5 @@
 <?php
   $myfile = fopen('test.txt', 'w');
-  fwrite($myfile, $_POST['draft_content'] . " ");
+  fwrite($myfile, $_GET['draft_content'] . " ");
   fclose($myfile);
 ?>
