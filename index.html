@@ -67,10 +67,12 @@
                 xmlhttp.open("GET", "test.xml", false);
                 xmlhttp.send();
                 var xmlDoc = xmlhttp.responseXML;
-                console.log(xmlDoc)
+                console.log(xmlDoc);
                 $(function(){
-                    var num = xmlDoc.getElementsByTagName("number")[0].childNodes[0].nodeValue
-                    $("#downloadNumberr").text(num)
+                    var num = xmlDoc.getElementsByTagName("number")[0].childNodes[0].nodeValue;
+                    console.log(num);
+                    console.log(typeof(num));
+                    $("#downloadNumberr").text(num);
                 })
             </script>
         </div>
