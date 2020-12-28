@@ -42,7 +42,7 @@
                 $(function(){
                     var $dn = $("#downloadNumber")
                     $(".file").click(function(){
-                        var num = $(dn.text(), 10) + 1;
+                        var num = parseInt($dn.text(), 10) + 1;
                         var draft_type = '2';
                         var form = $('<form></form>');
                         form.attr('action', '');
