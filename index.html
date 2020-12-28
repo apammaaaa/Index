@@ -69,7 +69,7 @@
                 var xmlDoc = xmlhttp.responseXML;
                 console.log(xmlDoc)
                 $(function(){
-                    num = xmlDoc.getElementsByTagName("number")[0].childNodes[0].nodeValue
+                    var num = xmlDoc.getElementsByTagName("number")[0].childNodes[0].nodeValue
                     $("#downloadNumberr").text(num)
                 })
             </script>
