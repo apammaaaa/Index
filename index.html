@@ -72,8 +72,7 @@
                     var num = xmlDoc.getElementsByTagName("number")[0].childNodes[0].nodeValue;
                     console.log(num);
                     console.log(typeof(num));
-                    $("#downloadNumber").text(num);
-                    $(".footer").load("test.xml");
+                    $("#downloadNumber").load("test.xml")
                 })
             </script>
         </div>
