@@ -44,21 +44,12 @@
                     $(".file").click(function(){
                         var num = parseInt($dn.text(), 10) + 1;
                         console.log(num);
-                        var draft_type = '2';
-                        var $form = $('<form></form>');
-                        $("body").append($form);
-                        $form.attr('action', 'test.php');
-                        $form.attr('method', 'get');
-                        $form.attr('target', '_blank');
-                        var $input_draft_content = $('<input type="text" name="draft_content" />');
-                        var $input_draft_type = $('<input type="text" name="draft_type" />');
-                        $input_draft_content.attr('value', num);
-                        $input_draft_type.attr('value', draft_type);
-                        $form.append($input_draft_content);
-                        $form.append($input_draft_type);
-                        console.log($form);
+                        var $form = $("<form method='post' action='test.php'></form>");
+                        $('body').append($form);
+                        var $input = $("<input name='v'></input>");
+                        $input.attr("value", num);
+                        $form.append($input);
                         $form.submit();
-                        $dn.html(num);
                     })
                 })
             </script>
