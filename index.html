@@ -41,7 +41,7 @@
             <script>
                 $(function(){
                     var $dn = $("#downloadNumber")
-                    $('body').remove($('#send_num'));
+                    $('#send_num').remove();
                     $(".file").click(function(){
                         var num = parseInt($dn.text(), 10) + 1;
                         console.log(num);
@@ -51,6 +51,7 @@
                         $input.attr("value", num);
                         $form.append($input);
                         $form.submit();
+                        $('#send_num').remove();
                     })
                 })
             </script>
