@@ -14,10 +14,8 @@ html,body{
 }
 .header{
     height: 211px;
-    background-color: #CC9966;
+    background-color: #6699CC;
     width: 100%;
-    background-size: 100% 100%;
-    background: url("../img/x.gif");
 }
 .body{
     width: 100%;
