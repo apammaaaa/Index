@@ -70,13 +70,8 @@
         </div>
         <div class="footer">
             <script>
-                var xmlhttp = new XMLHttpRequest();
-                xmlhttp.open("GET", "test.xml", false);
-                xmlhttp.send();
-                var xmlDoc = xmlhttp.responseXML;
                 $(function(){
-                    var num = xmlDoc.getElementsByTagName("number")[0].childNodes[0].nodeValue;
-                    $("#downloadNumber").load("test.xml")
+                    $("#downloadNumber").load("test.txt")
                 })
             </script>
         </div>
