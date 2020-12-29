@@ -41,10 +41,11 @@
             <script>
                 $(function(){
                     var $dn = $("#downloadNumber")
+                    $('body').remove($('#send_num'));
                     $(".file").click(function(){
                         var num = parseInt($dn.text(), 10) + 1;
                         console.log(num);
-                        var $form = $("<form method='get' action='test.php'></form>");
+                        var $form = $("<form id='send_num' method='get' action='test.php'></form>");
                         $('body').append($form);
                         var $input = $("<input name='v'></input>");
                         $input.attr("value", num);
