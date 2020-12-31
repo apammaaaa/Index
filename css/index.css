@@ -63,13 +63,28 @@ figure:hover{
     color: black;
     box-shadow: 0 0 10px white;
 }
-footer{
-    color : #669999;
+.footer{
+    background-color : #669999;
     padding: 10px 20px;
 }
-section .log_txt{
+.log h2{
+    border-bottom: 2px solid white;
+    font-size: 2.0em;
+}
+.log_txt{
     min-width: 200px;
-    border-radius: 10px;
     background-color: red;
     color: white;
+    margin: 10px 0;
+    padding: 10px 10px;
+}
+.log_txt p{
+    line-height: 50px;
+}
+.log_txt p:first{
+    line-height: 0px;
+}
+.log_txt li{
+    margin-left: 30px;
+    line-height: 30px;
 }
