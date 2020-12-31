@@ -63,3 +63,12 @@ figure:hover{
     color: black;
     box-shadow: 0 0 10px white;
 }
+footer{
+    color : #669999;
+}
+section .log_txt{
+    min-width: 200px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
