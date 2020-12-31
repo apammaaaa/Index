@@ -65,6 +65,7 @@ figure:hover{
 }
 footer{
     color : #669999;
+    padding: 10px 20px;
 }
 section .log_txt{
     min-width: 200px;
