@@ -1,0 +1,133 @@
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <script src="javascript/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Sprite 网页文本浏览器</title>
+</head>
+<body>
+    <script>
+        $(function(){
+            $(".logo").fadeIn();
+            $("h1").fadeIn();
+            $("h2").fadeIn();
+            $("p").fadeIn();
+            $("span").fadeIn();
+        })
+    </script>
+    <div class="page">
+        
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="main">
+                <h1>每天忙碌的寻找，到底什么我想要....</h1>
+            </div>
+        </div>
+        <div class="body">
+                         
+            <div class="dosay">
+                <div class="move">
+                    <h2>Sprite网页文本浏览器</h2>
+                    <p>使用纯文本浏览器测试网站是一种测试此网站是否容易浏览的好方法。它也是一款方便的屏幕阅读器。<a href="#download"><strong>免费下载</strong></a></p>
+                </div>
+            </div>
+    
+            <div id="download" class="download">
+            <script>
+                $(function(){
+                    var $dn = $("#downloadNumber")
+                    $('#send_num').remove();
+                    $(".file").click(function(){
+                        var num = parseInt($dn.text(), 10) + 1;
+                        console.log(num);
+                        var $form = $("<form id='send_num' method='get' action='test.php'></form>");
+                        $('body').append($form);
+                        var $input = $("<input name='v'></input>");
+                        $input.attr("value", num);
+                        $form.append($input);
+                        $form.submit();
+                        $('#send_num').remove();
+                    })
+                })
+            </script>
+            <h2>Downloads</h2>
+            <ul class="downloadlist">
+                <li>
+                    <a href="sprite_x64_0.1.zip">
+                    <figure class="file">
+                        <h3>系统:windows 64位</h3>
+                        <h3>版本:0.1</h3>
+                        <img src="img/file.png" alt="img" width="40" height="40">
+                        <span>sprite_x64_0.1.zip</span>
+                        <span>下载量:<small id="downloadNumber">96430</small></span>
+                    </figure></a>
+                </li>
+                <li>
+                    <a href="sprite_x86_0.1.1.zip">
+                    <figure class="file">
+                        <h3>系统:windows 32位</h3>
+                        <h3>版本:0.1.1</h3>
+                        <img src="img/file.png" alt="img" width="40" height="40">
+                        <span>sprite_x86_0.1.zip</span>
+                        <span>下载量:<small id="downloadNumber32">20631</small></span>
+                    </figure></a>
+                </li>
+                <li>
+                    <a href="sprite_x64_0.1.2.zip">
+                    <figure class="file">
+                        <h3>系统:windows 64位</h3>
+                        <h3>版本:0.1.2</h3>
+                        <img src="img/file.png" alt="img" width="40" height="40">
+                        <span>sprite_x64_0.1.2.zip</span>
+                        <span>下载量:<small id="downloadNumber32">1439</small></span>
+                    </figure></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="log">
+                <h2>更新日志</h2>
+                <section class="log_txt">
+                    <p>
+                    日期:2020-12-31<br>
+                    更新内容:<br>
+                        <ul>
+                            <li>解决了发送请求后返回的文本出现编码异常的问题</li>
+                        </ul>
+                    新年快到了,预祝大家新年快乐，本次更新了【windows 32位 0.1.1】版本，64位系统也将随即推出最新版本。
+                    </p>
+                </section>
+                <section class="log_txt">
+                    <p>
+                    日期:2020-1-12<br>
+                    更新内容:<br>
+                        <ul>
+                            <li>优化了一些细节问题</li>
+                            <li>支持对表单的显示</li>
+                        </ul>
+                    您会注意到这次更新使界面焕然一新。
+                    </p>
+                </section>
+            </div>
+            
+        </div>
+        <div class="foot">
+            <ul>
+                <li><a href="send.html">意见反馈</a></li>
+            </ul>
+            <div class="inf">
+                <p>本站提供的产品仅用于浏览、测试网站，严禁用于攻击他人的公司或系统，亦禁止随意传播。对于不听劝告而触犯法律的行为，一切责任均由当事人承担。</p>
+            </div>
+            <div class="m">
+                <p><small>&copy;sjhzh 2021-2022 联系邮箱:1607837367@qq.com</small></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

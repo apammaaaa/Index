@@ -1,0 +1,45 @@
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>意见箱</title>
+    <link rel="stylesheet" href="css/sendstyle.css" >
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="javascript/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(function(){
+            $(".btn").click(function(){
+                var title = $('[name=title]').val();
+                var txt = $('[name=txt]').val();
+                var txt_sp = [/,/, /./, /\n/, /，/, /。/, /:/, /‘/, /’/];
+                for(var i=0;i<txt_sp.length;i++){
+                    txt = txt.replace(txt_sp[i], "");
+                }
+                console.log(txt)
+                if(!txt || !title){
+                    alert("请填写完整表单")
+                }
+                else if(txt.length< 100){
+                    alert("请输入至少100字的意见")
+                }
+                else{
+                    alert("提交成功")
+                    $(location).attr("href", "index.html")
+                }
+            })
+        })
+    </script>
+    <form>
+        <h1>意见箱</h1>
+        <small><a href="index.html">返回官网</a></small>
+        <p>标题</p>
+        <input type='text' name='title' autocomplete="off"><br>
+        <p>正文</p>
+        <textarea name="txt" id="txt" cols="30" rows="10"></textarea><br>
+        <input class="btn" type="button" value="发送">
+    </form>
+    
+</body>
+</html>
