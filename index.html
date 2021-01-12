@@ -38,56 +38,39 @@
             </div>
     
             <div id="download" class="download">
-            <script>
-                $(function(){
-                    var $dn = $("#downloadNumber")
-                    $('#send_num').remove();
-                    $(".file").click(function(){
-                        var num = parseInt($dn.text(), 10) + 1;
-                        console.log(num);
-                        var $form = $("<form id='send_num' method='get' action='test.php'></form>");
-                        $('body').append($form);
-                        var $input = $("<input name='v'></input>");
-                        $input.attr("value", num);
-                        $form.append($input);
-                        $form.submit();
-                        $('#send_num').remove();
-                    })
-                })
-            </script>
-            <h2>Downloads</h2>
-            <ul class="downloadlist">
-                <li>
-                    <a href="sprite_x64_0.1.zip">
-                    <figure class="file">
-                        <h3>系统:windows 64位</h3>
-                        <h3>版本:0.1</h3>
-                        <img src="img/file.png" alt="img" width="40" height="40">
-                        <span>sprite_x64_0.1.zip</span>
-                        <span>下载量:<small id="downloadNumber">96430</small></span>
-                    </figure></a>
-                </li>
-                <li>
-                    <a href="sprite_x86_0.1.1.zip">
-                    <figure class="file">
-                        <h3>系统:windows 32位</h3>
-                        <h3>版本:0.1.1</h3>
-                        <img src="img/file.png" alt="img" width="40" height="40">
-                        <span>sprite_x86_0.1.zip</span>
-                        <span>下载量:<small id="downloadNumber32">20631</small></span>
-                    </figure></a>
-                </li>
-                <li>
-                    <a href="sprite_x64_0.1.2.zip">
-                    <figure class="file">
-                        <h3>系统:windows 64位</h3>
-                        <h3>版本:0.1.2</h3>
-                        <img src="img/file.png" alt="img" width="40" height="40">
-                        <span>sprite_x64_0.1.2.zip</span>
-                        <span>下载量:<small id="downloadNumber32">1439</small></span>
-                    </figure></a>
-                </li>
-            </ul>
+                <h2>Downloads</h2>
+                <ul class="downloadlist">
+                    <li>
+                        <a href="sprite_x64_0.1.zip">
+                        <figure class="file">
+                            <h3>系统:windows 64位</h3>
+                            <h3>版本:0.1</h3>
+                            <img src="img/file.png" alt="img" width="40" height="40">
+                            <span>sprite_x64_0.1.zip</span>
+                            <span>下载量:<small id="downloadNumber">96430</small></span>
+                        </figure></a>
+                    </li>
+                    <li>
+                        <a href="sprite_x86_0.1.1.zip">
+                        <figure class="file">
+                            <h3>系统:windows 32位</h3>
+                            <h3>版本:0.1.1</h3>
+                            <img src="img/file.png" alt="img" width="40" height="40">
+                            <span>sprite_x86_0.1.zip</span>
+                            <span>下载量:<small id="downloadNumber32">20631</small></span>
+                        </figure></a>
+                    </li>
+                    <li>
+                        <a href="sprite_x64_0.1.2.zip">
+                        <figure class="file">
+                            <h3>系统:windows 64位</h3>
+                            <h3>版本:0.1.2</h3>
+                            <img src="img/file.png" alt="img" width="40" height="40">
+                            <span>sprite_x64_0.1.2.zip</span>
+                            <span>下载量:<small id="downloadNumber32">1439</small></span>
+                        </figure></a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="footer">
@@ -105,7 +88,7 @@
                 </section>
                 <section class="log_txt">
                     <p>
-                    日期:2020-1-12<br>
+                    日期:2021-1-12<br>
                     更新内容:<br>
                         <ul>
                             <li>优化了一些细节问题</li>
