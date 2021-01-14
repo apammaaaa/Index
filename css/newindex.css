@@ -63,9 +63,6 @@ body{
         margin: 0 auto;
     }
     .info a{
-        margin-left: 5em;
-    }
-    .footer{
-        margin-left: 3em;
+        margin: 0 auto;
     }
 }
