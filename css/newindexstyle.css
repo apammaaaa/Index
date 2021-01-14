@@ -11,6 +11,7 @@
 
 .list{
     width: 80%;
+    min-height: 800px;
 }
 
 .info a{
@@ -22,6 +23,7 @@
 }
 .patterns{
     width: 90%;
+    min-height: 450px;
 }
 .patterns-list a{
     text-decoration: none;
@@ -90,6 +92,9 @@
     .aside{
         width: 100%;
         min-height: 35%;
+    }
+    .list{
+        min-height: 30%;
     }
     .info{
         width: 100%;
