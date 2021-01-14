@@ -1,0 +1,46 @@
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/newindex.css">
+    <link rel="stylesheet" href="../css/newindexstyle.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="../javascript/vue.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="aside">
+            <div class="list">
+                <div class="info">
+                    <a href="../index.html">
+                        <img src="../img/logo.png">
+                    </a><br>
+                    <a v-bind:href="url" id="newVersion">当前版本{{ new_version_name }}</a>
+                </div>
+                <nav class="patterns">
+                    <ul class="patterns-list">
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../downloads.html">下载</a></li>
+                        <li><a href="../news.html">日志</a></li>
+                        <li><a href="../author.html">联系</a></li>
+                    </ul>
+                </nav>
+                <div class="footer">
+                    <span><small>&copy;sjhzh 2021-2022</small></span><br>
+                    <span><small>本站提供的产品仅用于浏览、测试网站，严禁用于攻击他人的公司或系统，亦禁止随意传播。对于不听劝告而触犯法律的行为，一切责任均由当事人承担。</small></span>  
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="show">
+                <h1>Sprite version</h1>
+                <p>发布日期: </p>
+                <p>下载64位</p>
+                <p>下载32位</p>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/d_change_version.js"></script>
+</body>
+</html>
