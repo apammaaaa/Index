@@ -26,6 +26,23 @@
                         <li><a href="author.html">联系</a></li>
                     </ul>
                 </nav>
+                <div id="example-1" @click="show = !show">
+                    <span >
+                        菜单
+                    </span>
+                    <transition name="fade">
+                        <p v-if="show"><a href="index.html">首页</a></p>
+                    </transition>
+                    <transition name="fade">
+                        <p v-if="show"><a v-if="show" href="downloads.html">下载</a></p>
+                    </transition>
+                    <transition name="fade">
+                        <p v-if="show"><a v-if="show" href="news.html">日志</a></p>
+                    </transition>
+                    <transition name="fade">
+                        <p v-if="show"><a v-if="show" href="author.html">联系</a></p>
+                    </transition>
+                </div>
                 <div class="footer">
                     <span><small>&copy;sjhzh 2021-2022</small></span><br>
                     <span><small>本站提供的产品仅用于浏览、测试网站，严禁用于攻击他人的公司或系统，亦禁止随意传播。对于不听劝告而触犯法律的行为，一切责任均由当事人承担。</small></span>  
@@ -44,5 +61,6 @@
         </div>
     </div>
     <script src="javascript/change_version.js"></script>
+    <script src="javascript/toggle.js"></script>
 </body>
 </html>

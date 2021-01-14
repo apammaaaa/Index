@@ -38,7 +38,13 @@ body{
         right: 120px;
     }
 }
+#example-1{
+    display: none;
+}
 @media (max-width: 800px){
+    .page{
+        position: relative;
+    }
     .show{
         position: relative;
         margin: 0 auto;
@@ -49,14 +55,22 @@ body{
         margin:0 auto;
         display: block;
         padding: 40px;
-        margin-top: 100px;
+        clear: both;
     }
     .aside{
         position: relative;
         display: block;
     }
+    #example-1{
+        position: relative;
+        display: block;
+        clear: both;   
+        text-align: center;
+    }
+    .patterns{
+        display: none;
+    }
     .patterns-list li{
-        display: inline;
         margin: 0 auto;
     }
     .info{
