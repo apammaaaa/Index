@@ -25,9 +25,23 @@
     width: 90%;
     min-height: 450px;
 }
+.patterns-list{
+    list-style-image: url("../img/ulogo.png");
+}
 .patterns-list a{
     text-decoration: none;
     color: black;
+    font-size: 1.4em;
+    letter-spacing: 0.6em;
+    font-weight: 550
+}
+.patterns-list li{
+    transition: all .3s ease;
+}
+.patterns-list a:hover,
+.patterns-list li:hover{
+    background-color: rgb(66, 51, 51);
+    color: white
 }
 .footer{
     width: 90%;
