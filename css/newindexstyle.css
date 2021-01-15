@@ -93,8 +93,24 @@
     transform: translateX(10px);
     opacity: 0;
 }
-@media (max-width: 1124px){
-    
+@media (max-height: 800px){
+    .aside{
+        position: relative;
+        display: flex;
+        float: left;
+    }
+    .patterns{
+        min-height: 100px;
+    }
+    .patterns-list{
+        min-height: 100px;
+    }
+    .patterns li{
+        line-height: 10px;
+    }
+    .patterns-list a{
+        font-size: 1.1em;
+    }
 }
 @media (max-width: 800px){
     html,body{
