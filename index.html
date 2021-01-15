@@ -1,66 +1,43 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprite</title>
-    <link rel="stylesheet" href="css/newindex.css">
-    <link rel="stylesheet" href="css/newindexstyle.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="javascript/vue.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            display: flex;
+            background-color: rgb(226, 226, 226);
+        }
+        div{
+            margin: 0 auto;
+            align-self: center;
+        }
+        img{
+            max-width: 100%;
+        }
+        a{
+            color: black;
+            font-size: 1.3em;
+            text-decoration: none;
+            transition: all .3s ease;
+            user-select: none;
+        }
+        a:hover{
+            color: rgb(116, 53, 53);
+        }
+        p{
+            font-size: 1.3em;
+            user-select: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="page">
-        <div class="aside">
-            <div class="list">
-                <div class="info">
-                    <a href="index.html">
-                        <img src="img/logo.png">
-                    </a><br>
-                    <a v-bind:href="url" id="newVersion">当前版本{{ new_version_name }}</a>
-                </div>
-                <nav class="patterns">
-                    <ul class="patterns-list">
-                        <a href="index.html"><li>首页</li></a>
-                        <a href="downloads.html"><li>下载</li></a>
-                        <a href="news.html"><li>日志</li></a>
-                        <a href="author.html"><li>联系</li></a>
-                    </ul>
-                </nav>
-                <div id="example-1" @click="show = !show">
-                    <span>
-                        菜单
-                    </span>
-                    <transition name="fade">
-                        <p v-if="show"><img src="./img/ulogo.png"><a href="index.html">首页</a></p>
-                    </transition>
-                    <transition name="fade">
-                        <p v-if="show"><img src="./img/ulogo.png"><a v-if="show" href="downloads.html">下载</a></p>
-                    </transition>
-                    <transition name="fade">
-                        <p v-if="show"><img src="./img/ulogo.png"><a v-if="show" href="news.html">日志</a></p>
-                    </transition>
-                    <transition name="fade">
-                        <p v-if="show"><img src="./img/ulogo.png"><a v-if="show" href="author.html">联系</a></p>
-                    </transition>
-                </div>
-                <div class="footer">
-                    <span><small>&copy;sjhzh 2021-2022</small></span><br>
-                    <span><small>本站提供的产品仅用于浏览、测试网站，严禁用于攻击他人的公司或系统，亦禁止随意传播。对于不听劝告而触犯法律的行为，一切责任均由当事人承担。</small></span>  
-                </div>
-            </div>
-        </div>
-        <div class="main">
-            <div class="show">
-                <h1>什么是Sprite？</h1>
-                <p>Sprite是免费的 (就像"自由言论"或者"免费啤酒")网页纯文本浏览器。使用纯文本浏览器测试网站是一种测试此网站是否容易浏览的好方法。如果使用纯文本浏览器可以方便地浏览到网站的每个地方，那么用户使用屏幕阅读器也可以做到。</p>
-                <p>Sprite是用python编写的，基于强大的Requests模块，并使用控制台作为输入输出环境以确保更高的执行效率和更小的程序尺寸，通过在不失去用户友好性的情况下优化更多的例程。Sprite试图减少世界二氧化碳的排放，当使用较少的cpu功率时，pc可以降低速度并降低功耗，从而实现绿色环境。</p>
-                <p id="waring">警告：非专业使用会导致危险的副作用，包括：安全缺陷症、冗余代码症、重新发明轮子症、啃文档症、抑郁、头疼、甚至死亡。</p>
-                <img src="img/sprite01.gif" alt="sprite">
-                <p>我希望您和我喜欢编写它一样喜欢Sprite。</p>
-            </div>
-        </div>
+    <div>
+        <img src="./img/im.png">
+        <p>网站正在维护</p>
+        <a href="https://sjhzh.gitee.io/sprite/">点击前往新的网站地址<i class="fa fa-hand-o-left" style="font-size:20px;"></i></a>
     </div>
-    <script src="javascript/change_version.js"></script>
-    <script src="javascript/toggle.js"></script>
 </body>
 </html>
