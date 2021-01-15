@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprite</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <style>
         body{
@@ -45,30 +45,20 @@
             font-weight: bold;
         }
         #route{
-            /* 动画名称 动画时长 延时时间 匀速 无限循环 逆播 */ 
-            animation: myanime 6s linear infinite;
-            margin:0 auto;
+            animation-duration: 6s;
         }
         #route:hover{
             animation-play-state: paused;/*鼠标放上去 暂停动画 */
-        }
-        @keyframes  myanime{
-            from    {transform: rotate(0deg);}
-            to      {transform: rotate(360deg);}
-        }
-        @media (max-width: 500px){
-            
         }
     </style>
 </head>
 <body>
     <div>
         <p>
-            <i id="route" class="fa fa-gear" style="font-size:600%;color:rgb(73, 73, 73)"></i><br>
+            <i id="route" class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true" style="font-size:600%;color:rgb(73, 73, 73)"></i><br>
             <span id="waring" style="">维护中</span><br>
             <img src="img/ulogo.png" height="20" ><a href="https://sjhzh.gitee.io/sprite/" style="font-weight: bold;"><span>点击前往新的首页</span></a><img src="img/ulogo.png"  height="20">
-        </p>
-        
+        </p>   
     </div>
 </body>
 </html>
