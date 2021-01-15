@@ -31,13 +31,24 @@
             font-size: 1.3em;
             user-select: none;
         }
+        #route{
+            /* 动画名称 动画时长 延时时间 匀速 无限循环 逆播 */ 
+            animation: myanime 6s linear infinite;
+        }
+        #route:hover{
+            animation-play-state: paused;/*鼠标放上去 暂停动画 */
+        }
+        @keyframes  myanime{
+            from    {transform: rotate(0deg);}
+            to      {transform: rotate(360deg);}
+        }
     </style>
 </head>
 <body>
     <div>
-        <img src="./img/im.png">
-        <p>网站正在维护</p>
-        <a href="https://sjhzh.gitee.io/sprite/">点击前往新的网站地址<i class="fa fa-hand-o-left" style="font-size:20px;"></i></a>
+        <p></p>
+        <p style="font-style: italic;"><i id="route" class="fa fa-gear" style="font-size:300px;color:rgb(73, 73, 73)"></i>网站维护中...</p>
+        <a href="https://sjhzh.gitee.io/sprite/" style="font-weight: bold;"><img src="img/ulogo.png">点击前往新的首页<i class="fa fa-hand-o-left" style="font-size:20px;"></i></a>
     </div>
 </body>
 </html>
