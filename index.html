@@ -13,27 +13,41 @@
         div{
             margin: 0 auto;
             align-self: center;
+            max-width: 600px;
         }
         img{
             max-width: 100%;
         }
         a{
-            color: black;
-            font-size: 1.3em;
-            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 5px;
             transition: all .3s ease;
             user-select: none;
+            border-radius: 10px;
+            margin: 0 auto;
+            font-weight: 0;
         }
         a:hover{
             color: rgb(116, 53, 53);
         }
         p{
-            font-size: 1.3em;
+            text-align: center;
+        }
+        span{
             user-select: none;
+        }
+        a span{
+            font-weight: 300;
+        }
+        #waring{
+            font-size: 300%;
+            font-family: "楷体";
+            font-weight: bold;
         }
         #route{
             /* 动画名称 动画时长 延时时间 匀速 无限循环 逆播 */ 
             animation: myanime 6s linear infinite;
+            margin:0 auto;
         }
         #route:hover{
             animation-play-state: paused;/*鼠标放上去 暂停动画 */
@@ -42,13 +56,19 @@
             from    {transform: rotate(0deg);}
             to      {transform: rotate(360deg);}
         }
+        @media (max-width: 500px){
+            
+        }
     </style>
 </head>
 <body>
     <div>
-        <p></p>
-        <p style="font-style: italic;"><i id="route" class="fa fa-gear" style="font-size:300px;color:rgb(73, 73, 73)"></i>网站维护中...</p>
-        <a href="https://sjhzh.gitee.io/sprite/" style="font-weight: bold;"><img src="img/ulogo.png">点击前往新的首页<i class="fa fa-hand-o-left" style="font-size:20px;"></i></a>
+        <p>
+            <i id="route" class="fa fa-gear" style="font-size:600%;color:rgb(73, 73, 73)"></i><br>
+            <span id="waring" style="">维护中</span><br>
+            <img src="img/ulogo.png" height="20" ><a href="https://sjhzh.gitee.io/sprite/" style="font-weight: bold;"><span>点击前往新的首页</span></a><img src="img/ulogo.png"  height="20">
+        </p>
+        
     </div>
 </body>
 </html>
